@@ -7,7 +7,8 @@ public class App {
         PipedInputStream pos = new PipedInputStream(pis);
         pis.write(3);
         int n = pos.read();
-
+        pis.close();
+        pos.close();
         System.out.println(n);
     }
 }
