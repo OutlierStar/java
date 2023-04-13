@@ -6,6 +6,10 @@ public class Student {
     private float YuWenScore;
     private float ShuXueScore;
 
+    public void setShuXueScore(float shuXueScore) {
+        ShuXueScore = shuXueScore;
+    }
+
     public float getShuXueScore() {
         return ShuXueScore;
     }
@@ -44,7 +48,5 @@ public class Student {
         YuWenScore = yuWenScore;
     }
 
-    public void setShuXueScore(float parseFloat) {
-    }
 
 }

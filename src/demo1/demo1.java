@@ -10,9 +10,10 @@ import java.io.OutputStreamWriter;
 
 public class demo1 {
     public static void main(String[] args) {
-        File fname = new File("data.csv");
+        File fname = new File("./src/demo1/data.csv");
         InputStreamReader fr = null;
         BufferedReader br = null;
+
         try {
             fr = new InputStreamReader(new FileInputStream(fname));
             br = new BufferedReader(fr);
@@ -36,7 +37,7 @@ public class demo1 {
                 stu[i].setName(s[i][1]);
                 stu[i].setYuWenScore(Float.parseFloat(s[i][2]));
                 stu[i].setShuXueScore(Float.parseFloat(s[i][3]));
-                stu[i].setYuWenScore(Float.parseFloat(s[i][4]));
+                stu[i].setYingYuScore(Float.parseFloat(s[i][4]));
 
             }
 
@@ -45,7 +46,7 @@ public class demo1 {
             }
 
             for (int i = 1; i < count; i++) {
-                File f = new File(stu[i].getId() + stu[i].getName() + ".txt");
+                File f = new File("./src/demo1/"+stu[i].getId() + stu[i].getName() + ".txt");
                 FileOutputStream fos = new FileOutputStream(f);
                 OutputStreamWriter dos = new OutputStreamWriter(fos);
                 dos.write("学号：" + stu[i].getId() + "\r\n");
