@@ -1,17 +1,47 @@
 package demo1;
 
 public class Student {
-    private int id;
+    private String id;
     private String name;
-    private String YuWenScore;
+    private float YuWenScore;
+    private float ShuXueScore;
 
-    public void setId(String string) {
+    public float getShuXueScore() {
+        return ShuXueScore;
     }
 
-    public void setName(String string) {
+    public float getYingYuScore() {
+        return YingYuScore;
     }
 
-    public void setYuWenScore(float parseFloat) {
+    public void setYingYuScore(float yingYuScore) {
+        YingYuScore = yingYuScore;
+    }
+
+    private float YingYuScore;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public float getYuWenScore() {
+        return YuWenScore;
+    }
+
+    public void setYuWenScore(float yuWenScore) {
+        YuWenScore = yuWenScore;
     }
 
     public void setShuXueScore(float parseFloat) {
