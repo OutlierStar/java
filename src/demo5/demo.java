@@ -7,7 +7,7 @@ public class demo {
     public static void main(String[] args) {
 
         System.out.println("输入产生式的个数");
-        Scanner ip = new Scanner(System.in) ; 
+        Scanner i = new Scanner(System.in) ; 
         int n=ip.nextInt();
 
 
