@@ -56,10 +56,11 @@ public class DataProcessor {
 
     // 解密位置信息的函数，这里仅作演示，实际应用中应该使用更加安全的加密方式
     private String decrypt(String encrypted) {
+        System.out.println(encrypted);
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < encrypted.length(); i++) {
             char c = encrypted.charAt(i);
-            sb.append((char)(c));
+            sb.append((char)(c - 2));
         }
         return sb.toString();
     }
